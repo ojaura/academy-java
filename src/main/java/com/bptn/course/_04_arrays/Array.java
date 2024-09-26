@@ -1,5 +1,7 @@
 package com.bptn.course._04_arrays;
 
+import java.util.Arrays;
+
 public class Array {
 
 	public static void main(String[] args) {
@@ -30,5 +32,12 @@ public class Array {
 		for(int i =0; i<myArray.length; i++) {
 			System.out.println(myArray[i]);
 		}
+	
+		for (int i= myArray.length - 1; i>=0; i--) {
+			System.out.println(myArray[i]);
+		}
+		
+		//Print all the elements in myArray without using for-loop
+		System.out.println(Arrays.toString(myArray));
 	}
 }
