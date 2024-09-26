@@ -48,5 +48,28 @@ public class Strings {
 		
 		System.out.println("Reversed word: "+ reversedWord);
 		
-	}
+		String message = "12" + 4 + 3;
+		System.out.println(message);
+		
+		String message1 = "This is a test";
+		System.out.println(message1.indexOf("Hello"));
+		  
+	//	String s1 = "baby";
+		//String s2 = s1.substring(0,3);
+		//String s3 = "Miss you!";
+		//int leng = s3.length();
+		
+		String s4 = "baby";
+		//String s5 = s1.substring(2);
+		
+		String s6 = new String("hi there");
+		int pos = s6.indexOf("e");
+		String s7 = s6.substring(0,pos);
+
+		String s1 = "Hi";
+		String s2 = "Bye";
+		int answer = s1.compareTo(s2);
+		
+		System.out.println("the" + answer);
+}
 }
