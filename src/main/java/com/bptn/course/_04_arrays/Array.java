@@ -8,6 +8,7 @@ public class Array {
 		
 		//Declare and initialize an array with 6 values
 		int[] myArray = {3,5,7,9,11,13};
+		String[] words = {"ok", "yes", "no"};
 		
 		//Print the first and second element to the console
 		System.out.println("First element: "+ myArray[0]);
@@ -33,8 +34,8 @@ public class Array {
 			System.out.println(myArray[i]);
 		}
 	
-		for (int i= myArray.length - 1; i>=0; i--) {
-			System.out.println(myArray[i]);
+		for (int i= 0; i <words.length; i++) {
+			System.out.println(words[i]);
 		}
 		
 		//Print all the elements in myArray without using for-loop
