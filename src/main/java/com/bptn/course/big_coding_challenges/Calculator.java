@@ -10,15 +10,14 @@ public class Calculator {
 		double firstNumber;
 		double secondNumber;
 		double result;
+		int continue_or_exit;
 
 		// Initialize scanner object
 		Scanner scan = new Scanner(System.in);
-		
 		// Declare variable to store operation choices.
 		int choice;
 		
 		do {
-			
 			// Prompt user to select a choice for the operation they want.
 			System.out.println("/…Calculator Menu…/\r\n"
 					+ "Press 1 for addition\r\n"
@@ -31,7 +30,6 @@ public class Calculator {
 			
 			// Get user's choice
 			choice = scan.nextInt();
-			
 			// Addition
 			if(choice == 1) {
 				// Prompt user to enter two numbers and store in variables
@@ -43,11 +41,8 @@ public class Calculator {
 				result = firstNumber + secondNumber;
 				// Output the result
 				System.out.println("Adding "+ firstNumber + " and " + secondNumber + " is = " + result);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
 			}
-			//Subtraction
+			// Subtraction
 			else if(choice == 2) {
 				// Prompt user to enter two numbers and store in variables
 				System.out.println("Enter the first number: ");
@@ -56,13 +51,10 @@ public class Calculator {
 				secondNumber = scan.nextDouble();
 				// Perform subtraction
 				result = firstNumber - secondNumber;
-				//Output the result
+				// Output the result
 				System.out.println("Subtracting "+ firstNumber + " by " + secondNumber + " is = " + result);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
 			}	
-			//Multiplication
+			// Multiplication
 			else if(choice == 3) {
 				// Prompt user to enter two numbers and store in variables
 				System.out.println("Enter the first number: ");
@@ -71,13 +63,10 @@ public class Calculator {
 				secondNumber = scan.nextDouble();
 				// Perform Multiplication
 				result = firstNumber * secondNumber;
-				//Output the result
+				// Output the result
 				System.out.println("The product of the numbers "+ firstNumber + " and " + secondNumber + " is = " + result);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
 			}
-			//Division
+			// Division
 			else if(choice == 4) {
 				// Prompt user to enter two numbers and store in variables
 				System.out.println("Enter the first number: ");
@@ -86,27 +75,19 @@ public class Calculator {
 				secondNumber = scan.nextDouble();
 				// Perform Division
 				result = firstNumber / secondNumber;
-				//Output the result
+				// Output the result
 				System.out.println("Dividing "+ firstNumber + " by " + secondNumber + " the quotient is " + result);
 				System.out.println("The remainder is " + firstNumber % secondNumber);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
 			}
-			//Square
+			// Square
 			else if (choice == 5){
 				// Prompt the user to enter a number.
-				System.out.println("Enter the first number: ");
-				firstNumber = scan.nextDouble();
-				// Square the user's input number
 				System.out.println("Enter the number to find its Square : ");
 				firstNumber = scan.nextDouble();
+				// Square the user's input number
 				result = firstNumber * firstNumber;
-				//Output the result
+				// Output the result
 				System.out.println("The Square of the number "+ firstNumber + " is = " + result);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
 			}
 			//Square Root
 			else if (choice == 6){
@@ -117,9 +98,6 @@ public class Calculator {
 				result = Math.sqrt(firstNumber);
 				//Output the result
 				System.out.println("The Square root of the number "+ firstNumber + " is = " + result);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
 			}
 			// Reciprocal
 			else if (choice == 7){
@@ -130,12 +108,16 @@ public class Calculator {
 				result = 1 / firstNumber;
 				//Output the result
 				System.out.println("The Reciprocal of the number "+ firstNumber + " is = " + result);
-				// Give user the options to continue or exit
-				System.out.println("To continue calculation Press 1, else press any other number to exit");
-				choice = scan.nextInt();
-			}
-			
-		} while ((0 < choice) && (choice <= 7));
+				
+			} else {
+				System.out.println("Invalid choice! Please choose between Operations 1 and 7.");
+			} 
+			// Give the user the options to continue or exit
+			System.out.println("To continue calculation Press 1, else press any other number to exit");
+			continue_or_exit= scan.nextInt();
+
+		} while (continue_or_exit == 1);
+		// Close scanner to prevent a leak
 		scan.close();
 
 	}
