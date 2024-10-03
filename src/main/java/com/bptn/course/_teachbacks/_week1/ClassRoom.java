@@ -1,4 +1,4 @@
-package com.bptn.course._04_arrays;
+package com.bptn.course._teachbacks._week1;
 
 import java.util.Arrays;
 
