@@ -36,13 +36,15 @@ public class Iphone {
 	// non-static method (objectName.methodName())
 	public void updateIosVersion(int newIos) {
 		this.iosVersion = newIos; // use this keyword
-		System.out.println(companyName + "updated the ios for this iphone");
+		System.out.println(companyName + " updated the ios for this iphone");
 	}
 	
 	// static method (className.methodName())
 	public static void changeCompanyName(String newCompanyName) {
-		companyName = newCompanyName; // this keyword can't be used
-		System.out.println("With the change, they also released a new model: " + modelType)
+		companyName = newCompanyName; // 
+		System.out.println("The company that sells iphones changed their name to: " + companyName);
+		//Iphone newIphoneModel = new Iphone("Iphone 11", "silver", 18, 900.00);
+		System.out.println("With the change, they also added a new model to their line of iphones : " + modelType);
 	}
 	
 	
@@ -79,6 +81,11 @@ public class Iphone {
 		// sell the company to microsoft (static/class-level)
 		Iphone.companyName = "Microsoft"; // can access using the class name- changes for all instances in the class
 		
+		Iphone.changeCompanyName("Google");
+		
+		
+		
+		
 		System.out.println("Accessing non-static variables for Lara's iphone");
 		laraIphone.displayDetails();
 		System.out.println("\nAccessing non-static variables for Sam's iphone");
@@ -88,11 +95,12 @@ public class Iphone {
 		samIphone.updateIosVersion(19);
 		samIphone.changeCompanyName("Samsung");
 		
+		/*
 		System.out.println("Accessing non-static variables for Lara's iphone");
 		laraIphone.displayDetails();
 		System.out.println("\nAccessing non-static variables for Sam's iphone");
 		samIphone.displayDetails();
-		
+		*/
 
 	}
 
