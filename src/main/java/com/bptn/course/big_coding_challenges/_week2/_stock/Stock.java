@@ -21,6 +21,8 @@ public class Stock {
 	}
 	
 	//Class Methods
+	
+	//Method to adjust price, percent change and market cap
 	public void adjustPrice(int change) {
 		this.price += change;
 		double change_as_a_double = change;
@@ -28,6 +30,7 @@ public class Stock {
 		this.marketCap = totalShares * price;
 	}
 	
+	//Overrides toString() method
 	public String toString() {
 		return "Ticker Symbol: " + tickerSymbol +
 				"\nCompany: " + companyName + 
