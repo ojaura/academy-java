@@ -13,6 +13,7 @@ public class ToDoList {
 	//Change the first element to something else
 	newList.set(1, "Order Pizza");
 	
+	// Print the new list
 	System.out.println(newList.size() + " things to do!");
 	System.out.println("Here's the first thing to do: "+ newList.get(0));
 	
