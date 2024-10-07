@@ -64,3 +64,11 @@ public class Employee {
 //this keyword is used to point to the current instance variable- if you have instance variables, local variable or parameter variable
 //with exactly the same name. The this keyword refers to the variable that was defined at the top (instance variables) and the variable w/o this, is 
 // the parameter from the local method. 
+
+//Major key takeaways
+//this keyword is used to point to the current instance variable- if you have instance variables, local variable or parameter variable with
+//exactly the same name
+
+//1. this can be used to call instance variable from current class ("Employee class")
+//2. this can be used to call current class constructor
+//3. this can be used to call instance methods from the current class

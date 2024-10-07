@@ -26,7 +26,6 @@ public class Phone {
 		weight = w;
 		height = h;
 		width = wi;
-		//color = c;
 	}
 	public Phone(int w, int h, int wi, String c) {
 		weight = w;
@@ -92,3 +91,6 @@ public class Movie
 // from being accessed from another class. We don't want it to be easily accessible.
 
 //Instance methods are always declared as public because we want it to be accessible.
+//We can many parameterized constructors which can have the same name but different number of parameters
+//We can only have 1 default constructor within a class
+//IF we do not have any constructors in the class- Java automatically created a default constructor by setting default values

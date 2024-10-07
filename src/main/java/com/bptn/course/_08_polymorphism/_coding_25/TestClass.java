@@ -9,5 +9,4 @@ public class TestClass {
         Bike bike = new Bike("Grey", "Bianchi", "SilverColored");
         bike.print();
     }
-
 }

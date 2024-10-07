@@ -13,15 +13,14 @@ class Dog extends Animal {
 	// has its own methods
 	// this is an overridden method because this method already exists in the parent class.
 	//@Override - this phrase indicates/lets the compiler know that the method pre-exists and has its own implementation in the super class.
+	
 	// this subclass has its own implementation of the method.
+	@Override
 	void makeSound() {
 		System.out.println("Bark!");
 	}
 }
 
-class Cheetah extends Animal {
-	
-}
 
 public class Polymorphism1 {
 

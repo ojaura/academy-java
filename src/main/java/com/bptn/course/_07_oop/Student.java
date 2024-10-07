@@ -3,6 +3,7 @@ package com.bptn.course._07_oop;
 public class Student {
     // Declare the variables (instance and static)
 
+	//define instance variables
     private static String name;
     private static int grade;
     private static String principalName="Ms.Mckoy";
