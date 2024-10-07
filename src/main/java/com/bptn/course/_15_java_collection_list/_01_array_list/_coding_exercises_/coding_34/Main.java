@@ -1,4 +1,4 @@
-package com.bptn.course._15_java_collection_list._01_array_list._coding_exercises_coding_34;
+package com.bptn.course._15_java_collection_list._01_array_list._coding_exercises_.coding_34;
 
 import java.util.List;
 

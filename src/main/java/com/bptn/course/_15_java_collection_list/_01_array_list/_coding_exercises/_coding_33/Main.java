@@ -9,12 +9,16 @@ public class Main {
     public static  List<String> convertArrayToList(String[] inputArray) {
         
         // Create a new ArrayList of String. 
-    	List<String> newList = new ArrayList<>();
-    	
+    	List<String> newArrayList = new ArrayList<>();
 
         // Iterate inputArray using a for-each loop and add the elements to the new ArrayList. Hint: Use add() method to add elements to ArrayList.
 
+    	for (String item : inputArray) {
+            newArrayList.add(item);
+        }
+    	
         // return the new list with elements.
+    	return newArrayList;
     }
  
    
@@ -29,5 +33,3 @@ public class Main {
     }
 }
 
-
-}
