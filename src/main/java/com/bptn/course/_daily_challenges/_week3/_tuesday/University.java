@@ -1,10 +1,22 @@
 package com.bptn.course._daily_challenges._week3._tuesday;
 
-public class University {
+import java.util.ArrayList;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class University extends Student{
 
+	//Declare instance variables
+	ArrayList<Student> students = new ArrayList<>();
+	
+	//Create constructor
+	public University(ArrayList<Student> students) {
+		super(students = students);
 	}
+	
+	//Create accessor/getter methods
+	public static Student getStudent(long studentId) {
+		return student.student
+	}
+
+	
 
 }
